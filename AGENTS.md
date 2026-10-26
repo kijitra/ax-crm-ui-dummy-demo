@@ -25,9 +25,9 @@ Issue tracker の選択）。ローカル環境にのみ存在するパスなの
 
 - 目的: AIに業務を任せる管理画面のUI検討。
 - 種別: code。フロントエンドのみのローカルデモ。
-- リポジトリ: remote未作成。
-- 公開範囲: ローカル限定。外部公開は未承認。
-- 提供・配布の対象: Akaneさんによる画面レビュー。
+- リポジトリ: `kijitra/ax-crm-ui-dummy-demo`。
+- 公開範囲: ダミー実装のGitHubソース公開をAkaneさんが承認済み。本番サービスのデプロイは対象外。
+- 提供・配布の対象: 管理画面の操作レビュー。全レコードが架空。
 - 技術: HTML、CSS、JavaScript。外部依存なし。
 - 全レコードはダミー。DB・メール・Cloudflareへの接続なし。
 
@@ -42,16 +42,17 @@ Issue tracker の選択）。ローカル環境にのみ存在するパスなの
 
 ## ブランチと PR
 
-- ベース: ローカル作業ブランチ `codex/initial-demo` で初期化。remote・origin/HEAD・mainはまだない。
+- 初期ブランチ: `codex/initial-demo`。初回push後にremoteのdefault branchを確認する。
 - ブランチ命名: `codex/<topic>`。
-- PR宛先: remote作成時に確認する。現在PRなし。
+- PR宛先: 後続作業時にremoteのdefault branchを確認する。現在PRなし。
 - PR本文: 変更範囲と操作検証結果、未確認の環境を書く。
-- push: 今回は行わない。remote作成・公開には承認が必要。
+- 初回GitHubソース公開は承認済み。pushは親担当が実施する。本番デプロイは含まない。
 
 ## 検証コマンド
 
 ```sh
 node scripts/check.cjs
+node scripts/check-chat.cjs
 python3 -m http.server 8877 --bind 127.0.0.1
 ```
 ブラウザーで `http://127.0.0.1:8877/` を確認する。未実行の検証を通過扱いしない。

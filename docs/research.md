@@ -8,3 +8,9 @@
 - [HubSpot: Prospecting agent](https://knowledge.hubspot.com/prospecting/use-the-prospecting-agent): 対象と任せる範囲、確認の条件を設定して運用する考え方を業務フローの設定に反映。
 
 画面は既存製品の複製ではなく、これらの情報構造を使ったダミー実装。
+
+## チャットから始める画面
+
+- [PostHog demo](https://posthog.com/demo): 親担当が冒頭で確認した、中央のAI入力から操作を始める体験を参考にした。
+- [PostHog Context warehouse](https://posthog.com/context-warehouse): データと分析を同じ環境で扱う考え方を参考に、チャットの回答に同じ案件データの表と集計への導線を用意した。
+- index.htmlでは固定シナリオの返信、案件表、レコード詳細を同じメモリー上のデータで動かす。外部データやAIへの接続はない。
