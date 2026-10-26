@@ -14,3 +14,7 @@
 - [PostHog demo](https://posthog.com/demo): 親担当が冒頭で確認した、中央のAI入力から操作を始める体験を参考にした。
 - [PostHog Context warehouse](https://posthog.com/context-warehouse): データと分析を同じ環境で扱う考え方を参考に、チャットの回答に同じ案件データの表と集計への導線を用意した。
 - index.htmlでは固定シナリオの返信、案件表、レコード詳細を同じメモリー上のデータで動かす。外部データやAIへの接続はない。
+
+## 活動カードの参考
+
+[HERP Hireのコメント画面](https://lp.herp.cloud/news/reaction_241108)を親担当が確認。白い独立カードに投稿者、日時、内容をまとめ、縦の接続線を使わない構成を参考にした。リアクション機能は追加せず、業務の成果物と確認操作を同じカードに配置した。
